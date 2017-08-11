@@ -21,7 +21,6 @@
     "cordova-plugin-media-capture": "^1.4.3",
     "cordova-plugin-networkinterface": "^1.2.0",
     "cordova-plugin-powermanagement": "^1.0.5",
-    "cordova-plugin-screen-orientation": "^2.0.1",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "^2.2.3",
     "cordova-plugin-vibration": "^2.1.5",
