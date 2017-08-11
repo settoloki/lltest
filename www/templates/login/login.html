@@ -1,0 +1,137 @@
+<ion-view view-title="LiveLotto | Login" hide-nav-bar="true" class="curtain bg-dark-red" ng-init="user = {};">
+	<ion-content scroll=false class="" style="top: 0;right: 0;bottom: 0;left: 0;position: absolute;">
+		<div class="scroll flex flex-column justify-end col-12" style="position:relative;height:100%">
+
+
+			<div class="col-3 absolute top-0 left-0"><img src="dist/img/BG/curtain.png" ng-init="signup=true;login=false"></div>
+			<div class="col-3 flip absolute top-0 right-0"><img src="dist/img/BG/curtain.png"></div>
+			<section class="relative height-100 col-12 sm-col-6 mx-auto">
+				<div class="singlepop absolute left-50 translate-x text-center loginLogo"><img src="dist/img/backLotto.png"></div>
+
+				<div class="spotlight1 fixed top-0 left-0 circle bg-white opacity-15" style=""></div>
+				<div class="spotlight2 fixed top-0 left-0 circle bg-white opacity-15" style=""></div>
+
+				<div class="loginavatar1 loginpop1 absolute" style="">
+					<div class="circle-outer shadow relative bg-dark-grey">
+						<div class="circle-inner highlight border-4 border border-grey bg-grey">
+							<div class="circle border border-darken-4 border-2">
+								<img class="block circle" src="dist/img/avatar/login5.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loginavatar2 loginpop2 absolute" style="">
+					<div class="circle-outer shadow relative bg-dark-blue">
+						<div class="circle-inner highlight border-4 border border-blue bg-blue">
+							<div class="circle border border-darken-4 border-2">
+								<img class="block circle" src="dist/img/avatar/login2.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loginavatar3 loginpop3 absolute" style="">
+					<div class="circle-outer shadow relative bg-dark-red">
+						<div class="circle-inner highlight border-4 border border-red bg-red">
+							<div class="circle border border-darken-4 border-2">
+								<img class="block circle" src="dist/img/avatar/login4.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loginavatar4 loginpop1 absolute" style="">
+					<div class="circle-outer shadow relative bg-yellow">
+						<div class="circle-inner highlight border-4 border border-orange bg-yellow">
+							<div class="circle border border-darken-4 border-2">
+								<img class="block circle" src="dist/img/avatar/login1.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loginavatar5 loginpop2 absolute" style="">
+					<div class="circle-outer shadow relative bg-dark-purple">
+						<div class="circle-inner highlight border-4 border border-purple bg-purple">
+							<div class="circle border border-darken-4 border-2">
+								<img class="block circle" src="dist/img/avatar/login3.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <div class="p2 fixed bottom-0 left-0 right-0" style="max-width:620px;margin:0 auto;" ng-show="signup"
+                 ng-hide="login || $password">
+
+				<a class="flex items-center text-center white rounded bst-inner gradient-facebook h3 relative mb1 bevel"
+				   ng-click="logout(); facebook_login();">
+					<div class="self-stretch px1  flex items-center">
+						<span class="fa fa-facebook"></span>
+					</div>
+					<span class="flex-auto py2 pr2 block border-2 border-left border-color-dark-blue  lh2">Connect with Facebook</span>
+				</a>
+				<a analytics-on="click" analytics-event="RegisterButtonClick"
+				   class="block text-center white rounded bst-inner gradient-red h3 relative mb1" href="#/app/register"
+				   ng-click="logout(); register_step=1">
+				<span class="py2 bevel block lh1 rounded bs3">Sign up</span>
+			</a>
+			<div class="mxn1 clearfix">
+				<div class="col col-6 px1">
+					<a href="" class="block text-center white rounded bst-inner gradient-white h3 relative">
+						<span class="p1 block lh1 rounded bs2" ng-click="signup=false;login=true">Log In</span>
+					</a>
+				</div>
+				<div class="col col-6 px1">
+					<a class="block text-center white rounded bst-inner gradient-white h3 relative" href="#/app/demo">
+						<span class="p1 block lh1 rounded bs2">Try For Free</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="" ng-hide="signup || login" ng-show="$password" >
+			<div class="absolute top-0 left-0 col-12 height-100 fadeIn bg-darken-4" ></div>
+            <section class="slideDownCenter col-10 rounded absolute z3 top-50 left-50"
+                     style="max-width:620px;margin:0 auto;">
+				<div class="gradient-red bst-inner rounded-top white p1 clearfix relative">
+					<span class="m0 h4 lh5" style="padding-left:5px">Password Reset</span>
+				</div>
+				<div class="rounded-bottom bg-white p1 ">
+					<div class="col col-12 pb1" >Please enter your email address</div>
+					<form method="post" ng-submit="resetpass(pass.reset_email)" name="resetform">
+						<input type="email" class="input bg-aqua bs-inner-dark" style="margin-bottom:2px" placeholder="Email Address" ng-model="pass.reset_email" name="reset_email.email">
+						<div class="mxn1 clearfix pt1">
+							<div class="col col-6 px1">
+								<button type="button" class="col-12 btn text-center py1 white rounded bevel-3 gradient-black h3" ng-click="$password=false;login=true">Cancel</button>
+							</div>
+							<div class="col col-6 px1">
+								<button type="submit" class="col-12 btn text-center py1 white rounded bevel-3 gradient-black h3">OK</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<div class="" ng-hide="signup || $password" ng-show="login">
+			<div class="absolute top-0 left-0 col-12 height-100 bg-darken-4 opaqueShowMe display-none transition"></div>
+			<div class="col-12 moveMe absolute left-0 right-0  bottom-0 p2 transition"
+				 style="max-width:620px;margin:0 auto;">
+				<div class="white col col-6 pb1" ng-click="signup=true;login=false">Sign Up</div>
+				<div class="white col col-6 pb1 text-right" ng-click="$password=true">Forgot Password?</div>
+				<form ng-submit="doLogin()" ng-controller="LoginController">
+					<input type="text" class="focusHere input dark" style="margin-bottom:2px" placeholder="Username" ng-model="reg_user.username">
+					<input type="password" class="input dark mb1" placeholder="Password" ng-model="reg_user.password">
+					<div class="clearfix">
+						<div class="white col col-12 pb1 text-right rememberMe">
+							<input id="remember" type="checkbox" class="hide checkbox dark right" ng-model="reg_user.remember">
+							<label for="remember">Remember my details</label>
+						</div>
+					</div>
+					<button type="submit" class="col-12 btn text-center py2 white rounded bevel gradient-red" style="font-size:1.3em">Log In</button>
+				</form>
+			</div>
+		</div>
+			<!-- {{user}} -->
+
+		</div>
+	</ion-content>
+</ion-view>

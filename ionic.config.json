@@ -1,0 +1,18 @@
+{
+  "name": "LiveLotto",
+  "app_id": "fcf84d6c",
+  "gulpStartupTasks": [],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "scss/**/*"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ],
+  "type": "ionic1"
+}

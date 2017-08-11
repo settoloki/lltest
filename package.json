@@ -1,0 +1,133 @@
+{
+  "name": "myapp",
+  "version": "1.1.1",
+  "description": "myApp: An Ionic project",
+  "dependencies": {
+    "cordova-android": "^6.2.3",
+    "cordova-ios": "^4.4.0",
+    "cordova-plugin-analytics": "^1.4.3",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.1.0",
+    "cordova-plugin-console": "^1.0.7",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-facebook4": "^1.9.1",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-file-transfer": "^1.6.3",
+    "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-google-analytics": "^1.8.3",
+    "cordova-plugin-inappbrowser": "^1.7.1",
+    "cordova-plugin-insomnia": "^4.3.0",
+    "cordova-plugin-media": "^3.0.1",
+    "cordova-plugin-media-capture": "^1.4.3",
+    "cordova-plugin-networkinterface": "^1.2.0",
+    "cordova-plugin-powermanagement": "^1.0.5",
+    "cordova-plugin-screen-orientation": "^2.0.1",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.3",
+    "cordova-plugin-vibration": "^2.1.5",
+    "cordova-plugin-webserver": "^1.0.3",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "cordova-plugin-x-socialsharing": "^5.1.8",
+    "es6-promise-plugin": "git+https://github.com/vstirbu/PromisesPlugin.git",
+    "gulp-sourcemaps": "^2.6.0",
+    "ionic-native-transitions": "^1.0.0-rc10",
+    "ionic-plugin-keyboard": "~2.2.1",
+    "semver": "^5.4.1"
+  },
+  "devDependencies": {
+    "@ionic/cli-plugin-gulp": "1.0.2",
+    "@ionic/cli-plugin-ionic1": "2.0.1",
+    "angulartics-google-analytics": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "bower": "^1.3.3",
+    "gulp-babel": "^6.1.2",
+    "gulp-bower": "0.0.13",
+    "gulp-concat-sourcemap": "^1.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.4.1",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-strip-comments": "^2.4.5",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^2.2.20",
+    "pump": "^1.0.2",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-camera",
+    "cordova-plugin-compat",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-file",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-insomnia",
+    "cordova-plugin-media",
+    "cordova-plugin-media-capture",
+    "cordova-plugin-powermanagement",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-webserver",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-vibration",
+    "cordova-plugin-analytics",
+    "cordova-plugin-screen-orientation",
+    "cordova-plugin-facebook4",
+    "cordova-plugin-networkinterface",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-google-analytics",
+    "cordova-plugin-inappbrowser"
+  ],
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-facebook4": {
+        "APP_ID": "1522422484712736",
+        "APP_NAME": "LiveLotto"
+      },
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-x-socialsharing": {},
+      "cordova-plugin-powermanagement": {},
+      "cordova-plugin-webserver": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-compat": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "Your location is required to confirm you are playing from within Great Britain"
+      },
+      "cordova-plugin-insomnia": {},
+      "cordova-plugin-media": {
+        "MICROPHONE_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-media-capture": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "MICROPHONE_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-analytics": {},
+      "cordova-plugin-networkinterface": {},
+      "cordova-plugin-screen-orientation": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-google-analytics": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "cordovaPlatforms": [
+    "android",
+    "ios"
+  ]
+}
