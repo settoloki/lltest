@@ -72,7 +72,6 @@
     "cordova-plugin-splashscreen",
     "cordova-plugin-vibration",
     "cordova-plugin-analytics",
-    "cordova-plugin-screen-orientation",
     "cordova-plugin-facebook4",
     "cordova-plugin-networkinterface",
     "ionic-plugin-keyboard",
@@ -115,7 +114,6 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-analytics": {},
       "cordova-plugin-networkinterface": {},
-      "cordova-plugin-screen-orientation": {},
       "ionic-plugin-keyboard": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-google-analytics": {}
